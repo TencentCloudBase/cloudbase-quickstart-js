@@ -14,11 +14,29 @@ npm install -g @cloudbase/cli
 
 打开源码目录下的 `cloudbaserc.js` 文件，并填入你的 `envId`
 
+```js
+module.exports = {
+    // 此处填入你的真实环境 ID
+    envId: "your-env-id",
+
+    ...
+};
+```
+
 打开源码目录下的 `static/main.js` 文件，并填入你的 `envId`
+
+```js
+// 此处填入你的真实环境 ID
+var envId = 'your-env-id'
+
+...
+```
 
 ## 第 2 步：添加安全域名
 
 ```sh
+cloudbase login
+
 # envId 应该是你的真实环境 ID
 cloudbase env:domain:create envId.tcloudbaseapp.com
 ```
@@ -29,6 +47,7 @@ cloudbase env:domain:create envId.tcloudbaseapp.com
 
 ```js
 cd storage
+
 cloudbase hosting:deploy ./static ./storage
 ```
 
