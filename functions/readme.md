@@ -14,13 +14,33 @@ npm install -g @cloudbase/cli
 
 打开源码目录下的 `cloudbaserc.js` 文件，并填入你的 `envId`
 
+```js
+module.exports = {
+    // 此处填入你的真实环境 ID
+    envId: "your-env-id",
+
+    ...
+};
+```
+
+打开源码目录下的 `static/main.js` 文件，并填入你的 `envId`
+
+```js
+// 此处填入你的真实环境 ID
+var envId = 'your-env-id'
+
+...
+```
+
 ## 第 2 步：部署云函数
 
 进入源码目录进行云函数部署
 
 ```sh
 cd functions
+
 cloudbase login
+
 cloudbase functions:deploy
 ```
 
@@ -37,7 +57,8 @@ cloudbase env:domain:create envId.tcloudbaseapp.com
 
 ```js
 cd functions
-cloudbase hosting:deploy ./static
+
+cloudbase hosting:deploy ./static ./functions
 ```
 
-使用 envId.tcloudbaseapp.com 访问你的网站
+使用 envId.tcloudbaseapp.com/functions 访问你的网站（envId 应该是你的真实环境 ID）

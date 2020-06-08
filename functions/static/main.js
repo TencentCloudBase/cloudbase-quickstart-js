@@ -1,3 +1,6 @@
+// 此处填入你的真实环境 ID
+var envId = 'your-env-id'
+
 class FunctionQuickStarter {
   constructor() {
     // 绑定 dom
@@ -9,7 +12,7 @@ class FunctionQuickStarter {
 
     // 初始化 CloudBase
     this.app = tcb.init({
-      env: "test-cloud-5f25f8"
+      env: envId
     })
 
     this.addNumbersButton.disabled = true
