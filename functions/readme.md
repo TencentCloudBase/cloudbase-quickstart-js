@@ -24,7 +24,14 @@ cloudbase login
 cloudbase functions:deploy
 ```
 
-## 第 3 步：部署静态网站
+## 第 3 步：添加安全域名
+
+```sh
+# envId 应该是你的真实环境 ID
+cloudbase env:domain:create envId.tcloudbaseapp.com
+```
+
+## 第 4 步：部署静态网站
 
 进入源码目录进行静态网站部署
 
