@@ -1,4 +1,4 @@
-# 云函数快速开始
+# 云存储快速开始
 
 ## 准备工作
 1. [拥有腾讯云账号](https://docs.cloudbase.net/quick-start/create-env.html)
