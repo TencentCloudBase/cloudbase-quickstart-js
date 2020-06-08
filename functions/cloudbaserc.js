@@ -1,5 +1,5 @@
 module.exports = {
-    envId: "test-cloud-5f25f8",
+    envId: "your-env-id",
     functionRoot: "./functions",
     functions: [
         {
