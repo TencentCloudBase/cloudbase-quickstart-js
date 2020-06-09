@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://imgcache.qq.com/qcloud/tcbjs/1.6.0/tcb.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body style="text-align:center;">
+    <header>
+      <h1>云数据库 快速开始</h1>
+    </header>
+    <div style="margin: 0 30%; padding: 20px 0; border: solid;">
+      <h2>学生成绩系统</h2>
+      <h3>录入成绩</h3>
+      <form>
+        姓名:<br>
+        <input id="add-name">
+        <br>
+        成绩(0-100):<br>
+        <input id="add-score">
+        <br><br>
+        <button id="add-button">录入</button>
+      </form>
+      <h3>查询成绩</h3>
+      <form>
+        姓名:<br>
+        <input id="query-name">
+        <br><br>
+        <button id="query-button">查询个人</button>
+        <br><br>
+        <button id="query-all-button">查询全部</button>
+        <br><br>
+        <button id="query-top-button">查看最高分</button>
+      </form>
+      <h3>删除成绩</h3>
+      <form>
+        姓名:<br>
+        <input id="delete-name">
+        <br><br>
+        <button id="delete-button">删除</button>
+      </form>
+    </div>
+    
+    <h1>查看源码和部署教程</h1>
+    <a href="https://git.code.oa.com/QBase/cloudbase-quickstart-js/tree/master/database">
+      云数据库Demo源码
+    </a>
+  </body>
+</html>
