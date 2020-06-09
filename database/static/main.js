@@ -127,10 +127,17 @@ class FunctionQuickStarter {
       } else {
         console.log("数据库查询成功", res)
         // 打印数据库查询结果
-        var data = res.data[0]
-        window.alert(
-          `${name} 同学的成绩是: ${data.score} 分`
-        )
+        if (res.data.length > 0) {
+          var data = res.data[0]
+          window.alert(
+            `${name} 同学的成绩是: ${data.score} 分`
+          )
+        } else {
+          window.alert(
+            `查无此人!`
+          )
+        }
+        
       }
 
       this.setButtonStatus(false)
@@ -189,10 +196,17 @@ class FunctionQuickStarter {
       } else {
         console.log("数据库查询成功", res)
         // 打印数据库查询结果
-        var data = res.data[0]
-        window.alert(
-          `最高分是: ${data.name} 同学的 ${data.score} 分`
-        )
+        if (res.data.length > 0) {
+          var data = res.data[0]
+          window.alert(
+            `最高分是: ${data.name} 同学的 ${data.score} 分`
+          )
+        } else {
+          window.alert(
+            `请先录入学生成绩!`
+          )
+        }
+        
       }
 
       this.setButtonStatus(false)
