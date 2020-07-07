@@ -32,23 +32,30 @@ var envId = 'your-env-id'
 ...
 ```
 
-## 第 2 步：添加安全域名
+## 第 2 步：初始化 CLI
 
 ```sh
-cloudbase login
-
-# envId 应该是你的真实环境 ID
-cloudbase env:domain:create envId.tcloudbaseapp.com
-```
-
-## 第 3 步：部署静态网站
-
-进入源码目录进行静态网站部署
-
-```js
+## 进入源码根目录
 cd database
 
+## CLI 授权
+cloudbase login
+```
+
+## 第 3 步：开启匿名登录
+
+```sh
+## 开启匿名登录
+cloudbase env:login:create
+```
+
+## 第 4 步：部署静态网站
+
+```sh
+## 部署静态网站
 cloudbase hosting:deploy ./static ./database
 ```
+
+## 第 5 步：访问网站
 
 使用 envId.tcloudbaseapp.com/database 访问你的网站（envId 应该是你的真实环境 ID）
