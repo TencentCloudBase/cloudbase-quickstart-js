@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://imgcache.qq.com/qcloud/tcbjs/1.9.0/tcb.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body style="text-align:center;">
+    <header>
+      <h1>登录与用户 快速开始</h1>
+    </header>
+    <div style="margin: 0 30%; padding: 20px 0; border: solid;">
+      <h2>当前用户状态</h2>
+      <div id="user-status">未登录</div>
+      <h2>匿名登录</h2>
+      <button id="anonymous-login-button">登录</button>
+      <h2>自定义登录</h2>
+      <form>
+        自定义用户ID:<br>
+        <input id="custom-user-id">
+        <br><br>
+        <button id="custom-login-button">登录</button>
+      </form>
+      <h2>退出登录</h2>
+      <button id="logout-button">登出</button>
+      <h2>修改用户信息</h2>
+      <form>
+        昵称:<br>
+        <input id="custom-user-name">
+        <br><br>
+        <button id="update-user-button">修改</button>
+      </form>
+      
+    </div>
+    <h1>查看源码和部署教程</h1>
+    <a href="https://git.code.oa.com/QBase/cloudbase-quickstart-js/tree/master/auth">登录鉴权Demo源码</a>
+  </body>
+</html>
