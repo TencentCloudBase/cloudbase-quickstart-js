@@ -32,33 +32,37 @@ var envId = 'your-env-id'
 ...
 ```
 
-## 第 2 步：部署云函数
-
-进入源码目录进行云函数部署
+## 第 2 步：初始化 CLI
 
 ```sh
+## 进入源码根目录
 cd functions
 
+## CLI 授权
 cloudbase login
+```
 
+## 第 3 步：开启匿名登录
+
+```sh
+## 开启匿名登录
+cloudbase env:login:create
+```
+
+## 第 4 步：部署云函数
+
+```sh
+## 部署云函数
 cloudbase functions:deploy
 ```
 
-## 第 3 步：添加安全域名
+## 第 5 步：部署静态网站
 
 ```sh
-# envId 应该是你的真实环境 ID
-cloudbase env:domain:create envId.tcloudbaseapp.com
-```
-
-## 第 4 步：部署静态网站
-
-进入源码目录进行静态网站部署
-
-```js
-cd functions
-
+## 部署静态网站
 cloudbase hosting:deploy ./static ./functions
 ```
+
+## 第 6 步：访问网站
 
 使用 envId.tcloudbaseapp.com/functions 访问你的网站（envId 应该是你的真实环境 ID）
