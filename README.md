@@ -2,7 +2,7 @@
 
 基于 CloudBase JavaScript Sdk 开发的一系列简单 Demo，帮助开发者快速入门。
 
-* 云函数快速开始
+* 登录与用户快速开始
   - [演示](https://tdemo-1258016615.tcloudbaseapp.com/auth/)
   - [源码](auth/README.md)
 
