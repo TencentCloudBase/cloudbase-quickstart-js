@@ -49,7 +49,11 @@ cloudbase login
 cloudbase env:login:create
 ```
 
-## 第 4 步：部署静态网站
+## 第 4 步: 创建数据库集合
+
+前往控制台[创建数据库集合](https://console.cloud.tencent.com/tcb/db)，集合名为 **test_db**
+
+## 第 5 步：部署静态网站
 
 * [开通静态网站托管](https://console.cloud.tencent.com/tcb/hosting)
 * 部署静态网站
@@ -59,6 +63,6 @@ cloudbase env:login:create
 cloudbase hosting:deploy ./static ./database
 ```
 
-## 第 5 步：访问网站
+## 第 6 步：访问网站
 
 使用 envId.tcloudbaseapp.com/database 访问你的网站（envId 应该是你的真实环境 ID）
