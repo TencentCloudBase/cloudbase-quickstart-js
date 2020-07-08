@@ -74,9 +74,12 @@ cloudbase service:create -p /generateTicket -f generateTicket
 
 ## 第 6 步：部署静态网站
 
+* [开通静态网站托管](https://console.cloud.tencent.com/tcb/hosting)
+* 部署静态网站
+
 ```sh
 ## 部署静态网站
-cloudbase hosting:deploy ./static ./storage
+cloudbase hosting:deploy ./static ./auth
 ```
 
 ## 第 7 步：访问网站
