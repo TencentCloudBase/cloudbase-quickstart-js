@@ -4,16 +4,16 @@
 
 * 登录与用户快速开始
   - [演示](https://tdemo-1258016615.tcloudbaseapp.com/auth/)
-  - [源码](auth/README.md)
+  - [源码](auth/)
 
 * 云函数快速开始
   - [演示](https://tdemo-1258016615.tcloudbaseapp.com/functions/)
-  - [源码](functions/README.md)
+  - [源码](functions/)
 
 * 云数据库快速开始
   - [演示](https://tdemo-1258016615.tcloudbaseapp.com/database/)
-  - [源码](database/README.md)
+  - [源码](database/)
 
 * 云存储快速开始
   - [演示](https://tdemo-1258016615.tcloudbaseapp.com/storage/)
-  - [源码](storage/README.md)
+  - [源码](storage/)
